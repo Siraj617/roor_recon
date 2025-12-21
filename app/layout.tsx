@@ -18,6 +18,8 @@ export const metadata: Metadata = {
   description: "Advanced penetration testing and offensive security services.",
   icons: {
     icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
 };
 
