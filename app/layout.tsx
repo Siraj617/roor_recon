@@ -21,6 +21,27 @@ export const metadata: Metadata = {
     shortcut: "/logo.png",
     apple: "/logo.png",
   },
+  openGraph: {
+    title: "RootRecon | Offensive Security",
+    description: "Advanced penetration testing and offensive security services.",
+    url: "https://rootrecon.vercel.app",
+    siteName: "RootRecon",
+    images: [
+      {
+        url: "/logo.png",
+        width: 512,
+        height: 512,
+        alt: "RootRecon Logo",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "RootRecon | Offensive Security",
+    description: "Advanced penetration testing and offensive security services.",
+    images: ["/logo.png"],
+  },
 };
 
 export default function RootLayout({
