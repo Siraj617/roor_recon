@@ -27,10 +27,10 @@ const menuData = {
     solutions: {
         title: "Industries",
         items: [
-            { name: "Fintech Security", href: "/solutions", icon: DollarSign, desc: "Secure financial apps" },
-            { name: "AI/ML Security", href: "/solutions", icon: Cpu, desc: "Protect AI systems" },
-            { name: "SaaS Security", href: "/solutions", icon: Building, desc: "SOC 2 & compliance" },
-            { name: "Healthcare Security", href: "/solutions", icon: Heart, desc: "HIPAA compliant testing" },
+            { name: "Fintech Security", href: "/industries/fintech", icon: DollarSign, desc: "Secure financial apps" },
+            { name: "AI/ML Security", href: "/industries/ai-ml", icon: Cpu, desc: "Protect AI systems" },
+            { name: "SaaS Security", href: "/industries/saas", icon: Building, desc: "SOC 2 & compliance" },
+            { name: "Healthcare Security", href: "/industries/healthcare", icon: Heart, desc: "HIPAA compliant testing" },
         ],
     },
     resources: {

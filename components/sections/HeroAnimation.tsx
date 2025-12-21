@@ -15,7 +15,11 @@ const services = [
     { icon: Crosshair, label: "Red Team", x: 300, y: 0 },
 ];
 
-export function HeroAnimation() {
+export interface HeroAnimationProps {
+    items?: { icon: any; label: string; x: number; y: number }[];
+}
+
+export function HeroAnimation({ items = services }: HeroAnimationProps) {
     return (
         <div className="relative w-full h-full min-h-[550px] flex items-center justify-center">
             {/* Central Shield */}
@@ -64,7 +68,7 @@ export function HeroAnimation() {
             ))}
 
             {/* Floating Service Cards */}
-            {services.map((item, index) => (
+            {items.map((item, index) => (
                 <motion.div
                     key={index}
                     className="absolute z-10"
