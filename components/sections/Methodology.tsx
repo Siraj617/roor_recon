@@ -31,8 +31,8 @@ export function Methodology() {
                     subtitle="A battle-tested approach mirroring real attack campaigns."
                 />
 
-                {/* Horizontal Timeline - 8 Steps */}
-                <div className="relative max-w-6xl mx-auto mb-24 pt-8">
+                {/* Desktop: Horizontal Timeline */}
+                <div className="hidden lg:block relative max-w-6xl mx-auto mb-24 pt-8">
                     {/* Line Container */}
                     <div className="absolute top-16 left-[6%] right-[6%] h-1 z-0">
                         <div className="absolute inset-0 bg-slate-200 rounded-full" />
@@ -79,6 +79,47 @@ export function Methodology() {
                                     <p className="text-slate-500 text-[10px] mt-0.5">{step.desc}</p>
                                 </motion.div>
                             </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Mobile: Vertical Timeline */}
+                <div className="lg:hidden relative max-w-md mx-auto mb-16">
+                    {/* Vertical Line */}
+                    <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-slate-200">
+                        <motion.div
+                            className="absolute top-0 left-0 right-0 bg-gradient-to-b from-blue-500 to-blue-600"
+                            initial={{ height: "0%" }}
+                            whileInView={{ height: "100%" }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 2, ease: "easeOut" }}
+                        />
+                    </div>
+
+                    <div className="relative space-y-6">
+                        {steps.map((step, index) => (
+                            <motion.div
+                                key={index}
+                                className="relative flex items-start gap-4 pl-14"
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.4, delay: index * 0.1 }}
+                            >
+                                {/* Circle with Icon */}
+                                <div className="absolute left-0 w-12 h-12 rounded-full bg-white border-4 border-blue-500 flex items-center justify-center shadow-lg">
+                                    <step.icon className="w-5 h-5 text-blue-600" />
+                                    <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-blue-600 text-white text-[10px] font-bold flex items-center justify-center shadow-md">
+                                        {index + 1}
+                                    </div>
+                                </div>
+
+                                {/* Content Card */}
+                                <div className="flex-1 bg-white rounded-xl p-4 shadow-md border border-slate-100">
+                                    <h3 className="font-bold text-slate-900">{step.title}</h3>
+                                    <p className="text-sm text-slate-500 mt-1">{step.desc}</p>
+                                </div>
+                            </motion.div>
                         ))}
                     </div>
                 </div>
