@@ -8,19 +8,24 @@ import { Button } from "@/components/ui/Button";
 import { Menu, X, ChevronDown, Shield, Target, Smartphone, Globe, Server, Building, Cpu, Heart, DollarSign, FileText, BookOpen, Users, Info, MessageSquare } from "lucide-react";
 import { cn } from "@/lib/utils";
 
+import { Cloud, Code } from "lucide-react";
+
 const menuData = {
     services: {
         title: "Services",
         items: [
-            { name: "Penetration Testing (PTaaS)", href: "/solutions", icon: Shield, desc: "Manual security assessments" },
-            { name: "Red Teaming", href: "/solutions", icon: Target, desc: "Simulate real-world attacks" },
-            { name: "Mobile App Security", href: "/solutions", icon: Smartphone, desc: "Android & iOS testing" },
-            { name: "API Security Testing", href: "/solutions", icon: Server, desc: "REST & GraphQL testing" },
-            { name: "Web App Security", href: "/solutions", icon: Globe, desc: "OWASP Top 10 coverage" },
+            { name: "Penetration Testing", href: "/solutions/penetration-testing", icon: Shield, desc: "Comprehensive security assessments" },
+            { name: "PTaaS", href: "/solutions/ptaas", icon: Building, desc: "Continuous testing as a service" },
+            { name: "Red Teaming", href: "/solutions/red-teaming", icon: Target, desc: "Simulate real-world attacks" },
+            { name: "Web App Security", href: "/solutions/web-security", icon: Globe, desc: "OWASP Top 10 & beyond" },
+            { name: "API Security", href: "/solutions/api-security", icon: Server, desc: "REST, GraphQL & gRPC" },
+            { name: "Mobile Security", href: "/solutions/mobile-security", icon: Smartphone, desc: "iOS & Android testing" },
+            { name: "Cloud Security", href: "/solutions/cloud-security", icon: Cloud, desc: "AWS, Azure & GCP" },
+            { name: "Code Review", href: "/solutions/code-review", icon: Code, desc: "Secure code analysis" },
         ],
     },
     solutions: {
-        title: "Solutions",
+        title: "Industries",
         items: [
             { name: "Fintech Security", href: "/solutions", icon: DollarSign, desc: "Secure financial apps" },
             { name: "AI/ML Security", href: "/solutions", icon: Cpu, desc: "Protect AI systems" },

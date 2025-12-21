@@ -9,6 +9,7 @@ const services = [
     {
         title: "Pentest as a Service",
         icon: ShieldCheck,
+        href: "/solutions/ptaas",
         desc: "Comprehensive manual security assessments to uncover critical vulnerabilities in your applications.",
         features: ["Web Apps", "Mobile Apps", "APIs", "Networks"],
         image: "https://certera.com/blog/wp-content/uploads/2023/04/web-application-penetration-testing-jpg.webp",
@@ -16,13 +17,15 @@ const services = [
     {
         title: "Red Teaming",
         icon: Crosshair,
+        href: "/solutions/red-teaming",
         desc: "Evaluate your security team's readiness with simulated real-world attacks.",
         features: ["Internal Testing", "External Testing", "Adversary Emulation", "Defense Evasion"],
         image: "https://artificesecurity.com/wp-content/uploads/2023/03/RED-TEAM-main-SM.jpg",
     },
     {
-        title: "Product Security",
+        title: "Code Review",
         icon: Code,
+        href: "/solutions/code-review",
         desc: "Continuous security program with code review, DevSecOps, and vulnerability management.",
         features: ["Code Review", "DevSecOps", "Vuln Management", "Continuous Testing"],
         image: "https://www.adtran.com/-/media/adtran/about-us/meta-images/82-productsecurity.jpg?rev=db10a52509db4a74aea1d6553bfb7167&hash=C6DE32BAE925B10AE03EE5643EDEAA89",
@@ -30,6 +33,7 @@ const services = [
     {
         title: "Web App Security",
         icon: Globe,
+        href: "/solutions/web-security",
         desc: "OWASP Top 10 coverage with business logic and authentication testing.",
         features: ["OWASP Top 10", "Business Logic", "Auth Bypass", "Session Mgmt"],
         image: "https://3852769.fs1.hubspotusercontent-na1.net/hubfs/3852769/Way%20to%20Improve%20Web%20Application%20Security.jpg",
@@ -37,6 +41,7 @@ const services = [
     {
         title: "API Security Testing",
         icon: Server,
+        href: "/solutions/api-security",
         desc: "Deep assessments for REST, GraphQL, and SOAP APIs.",
         features: ["BOLA/BFLA", "Rate Limiting", "Token Security", "Data Exposure"],
         image: "https://cdn.prod.website-files.com/5ff66329429d880392f6cba2/6455e369e4efcfed355a9152_655%20Preview.jpg",
@@ -44,6 +49,7 @@ const services = [
     {
         title: "Mobile App Security",
         icon: Smartphone,
+        href: "/solutions/mobile-security",
         desc: "Android and iOS testing with static analysis and reverse engineering.",
         features: ["Static Analysis", "Dynamic Testing", "Reverse Engineering", "API Security"],
         image: "https://nix-united.com/wp-content/uploads/2020/12/MobAppSecur_graphics_02.jpg",
@@ -63,9 +69,10 @@ export function Services() {
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {services.map((service, index) => (
-                        <div
+                        <Link
+                            href={service.href}
                             key={index}
-                            className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm hover:shadow-lg transition-shadow group"
+                            className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm hover:shadow-lg transition-all group flex flex-col h-full"
                         >
                             {/* Image */}
                             <div className="relative w-full h-40 rounded-xl overflow-hidden bg-slate-50 mb-4">
@@ -73,7 +80,7 @@ export function Services() {
                                     src={service.image}
                                     alt={service.title}
                                     fill
-                                    className="object-cover"
+                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                                     unoptimized
                                 />
                             </div>
@@ -86,7 +93,7 @@ export function Services() {
                                 <h3 className="text-lg font-bold text-slate-900">{service.title}</h3>
                             </div>
 
-                            <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                            <p className="text-slate-600 text-sm leading-relaxed mb-4 flex-1">
                                 {service.desc}
                             </p>
 
@@ -99,13 +106,10 @@ export function Services() {
                                 ))}
                             </div>
 
-                            <Link
-                                href="/solutions"
-                                className="inline-flex items-center text-blue-600 text-sm font-semibold hover:gap-1.5 transition-all"
-                            >
-                                Know more <ArrowRight size={14} className="ml-1" />
-                            </Link>
-                        </div>
+                            <div className="mt-auto pt-4 border-t border-slate-100 flex items-center text-blue-600 font-semibold text-sm group-hover:gap-2 transition-all">
+                                Learn More <ArrowRight size={16} className="ml-1" />
+                            </div>
+                        </Link>
                     ))}
                 </div>
             </div>

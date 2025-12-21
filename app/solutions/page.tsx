@@ -10,51 +10,59 @@ import Link from "next/link";
 const services = [
     {
         title: "Penetration Testing",
+        slug: "penetration-testing",
         icon: ShieldCheck,
         desc: "Comprehensive manual security assessments covering web applications, mobile apps, and APIs with proof-of-concept exploits.",
         features: ["Web Applications", "Mobile Apps", "APIs & Microservices", "Proof of Exploits"],
     },
     {
         title: "Red Teaming",
+        slug: "red-teaming",
         icon: Crosshair,
         desc: "Simulate real-world attack scenarios to test your organization's detection and response capabilities.",
         features: ["Adversary Simulation", "Social Engineering", "Physical Security", "Detection Testing"],
     },
     {
         title: "Web App Security",
+        slug: "web-security",
         icon: Globe,
         desc: "Deep testing for OWASP Top 10 vulnerabilities, business logic flaws, and authentication bypass issues.",
         features: ["OWASP Top 10", "Business Logic", "Auth Bypass", "Session Management"],
     },
     {
         title: "API Security",
+        slug: "api-security",
         icon: Server,
         desc: "REST, GraphQL, and SOAP API testing for authorization flaws, data exposure, and injection vulnerabilities.",
         features: ["BOLA/BFLA", "Rate Limiting", "Token Security", "Data Exposure"],
     },
     {
         title: "Mobile Security",
+        slug: "mobile-security",
         icon: Smartphone,
         desc: "Android and iOS application testing including reverse engineering, runtime analysis, and backend API security.",
         features: ["Static Analysis", "Dynamic Testing", "Reverse Engineering", "API Security"],
     },
     {
         title: "Cloud Security",
+        slug: "cloud-security",
         icon: Cloud,
         desc: "AWS, Azure, and GCP configuration audits to identify misconfigurations, IAM issues, and privilege escalation paths.",
         features: ["IAM Review", "Storage Security", "Network Config", "Container Security"],
     },
     {
         title: "Code Review",
+        slug: "code-review",
         icon: Code,
         desc: "Manual source code analysis to identify security vulnerabilities, logic flaws, and hardcoded secrets.",
         features: ["Secret Detection", "Logic Flaws", "Crypto Issues", "Dependency Audit"],
     },
     {
-        title: "Product Security",
+        title: "PTaaS",
+        slug: "ptaas",
         icon: Building,
-        desc: "Continuous security program for your products with ongoing assessments and security advisory.",
-        features: ["Continuous Testing", "Security Advisory", "Threat Modeling", "DevSecOps"],
+        desc: "Continuous penetration testing as a service with on-demand assessments and real-time vulnerability tracking.",
+        features: ["Continuous Testing", "On-Demand Scans", "Real-Time Reports", "DevSecOps Integration"],
     },
 ];
 
@@ -108,7 +116,7 @@ export default function SolutionsPage() {
                                         </div>
                                     ))}
                                 </div>
-                                <Link href="#" className="text-blue-600 text-sm font-semibold flex items-center hover:gap-1 transition-all">
+                                <Link href={`/solutions/${service.slug}`} className="text-blue-600 text-sm font-semibold flex items-center hover:gap-1 transition-all">
                                     Learn More <ArrowRight size={14} className="ml-1" />
                                 </Link>
                             </div>
