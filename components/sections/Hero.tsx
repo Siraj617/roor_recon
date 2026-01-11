@@ -48,7 +48,8 @@ export function Hero() {
                             transition={{ duration: 0.5, delay: 0.2 }}
                             className="text-lg md:text-xl text-slate-600 max-w-xl leading-relaxed font-medium"
                         >
-                            Simulating real-world cyber attacks to uncover exploitable vulnerabilities across Web, API, Mobile, Cloud, and Network environments — before adversaries do.
+                            Root Recon is an offensive security company that helps organizations find and fix real-world security risks before attackers do. We uncover hidden gaps in modern, fast-moving applications built on APIs, cloud, and third-party systems. Using an attacker mindset, not just automated tools, we identify how vulnerabilities can be chained to cause real business damage.
+
                         </motion.p>
 
                         <motion.div
