@@ -2,17 +2,39 @@
 
 import { motion } from "framer-motion";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { CheckCircle2, Search, Shield, FileText, RefreshCw, Target, Users, Lock, Zap } from "lucide-react";
+import { CheckCircle2, Search, Shield, FileText, RefreshCw, Target, Lock, Zap } from "lucide-react";
 
 const steps = [
-    { icon: Target, title: "Scoping", desc: "Define targets" },
-    { icon: Users, title: "Threat Model", desc: "Identify threats" },
-    { icon: Search, title: "Recon", desc: "Map attack surface" },
-    { icon: Lock, title: "Discovery", desc: "Find vulnerabilities" },
-    { icon: Shield, title: "Exploitation", desc: "Validate exploits" },
-    { icon: Zap, title: "Impact", desc: "Chain attacks" },
-    { icon: RefreshCw, title: "Validation", desc: "Verify findings" },
-    { icon: FileText, title: "Reporting", desc: "Remediation guide" },
+    {
+        icon: Search,
+        title: "Reconnaissance",
+        desc: "Map attack surface"
+    },
+    {
+        icon: Target,
+        title: "Threat Modeling",
+        desc: "Identify abuse scenarios"
+    },
+    {
+        icon: Zap,
+        title: "Exploitation",
+        desc: "Validate real impact"
+    },
+    {
+        icon: FileText,
+        title: "Reporting",
+        desc: "Remediation guidance"
+    },
+    {
+        icon: RefreshCw,
+        title: "Validation",
+        desc: "Verify fixes"
+    },
+    {
+        icon: Shield,
+        title: "Hardening",
+        desc: "Strengthen defenses"
+    },
 ];
 
 const compliance = [
@@ -32,9 +54,9 @@ export function Methodology() {
                 />
 
                 {/* Desktop: Horizontal Timeline */}
-                <div className="hidden lg:block relative max-w-6xl mx-auto mb-24 pt-8">
+                <div className="hidden lg:block relative max-w-5xl mx-auto mb-24 pt-8">
                     {/* Line Container */}
-                    <div className="absolute top-16 left-[6%] right-[6%] h-1 z-0">
+                    <div className="absolute top-16 left-[8%] right-[8%] h-1 z-0">
                         <div className="absolute inset-0 bg-slate-200 rounded-full" />
                         <motion.div
                             className="absolute inset-y-0 left-0 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full"
@@ -45,7 +67,7 @@ export function Methodology() {
                         />
                     </div>
 
-                    <div className="relative grid grid-cols-8 gap-2 z-10">
+                    <div className="relative grid grid-cols-6 gap-4 z-10">
                         {steps.map((step, index) => (
                             <div key={index} className="relative flex flex-col items-center">
                                 <motion.div
