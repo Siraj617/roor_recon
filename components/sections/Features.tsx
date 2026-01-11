@@ -48,7 +48,8 @@ export function Features() {
                         Traditional tools miss the exploits that real attackers use.
                     </h2>
                     <p className="text-lg text-slate-600">
-                        We combine hacker-mindset exploration with defender-grade reporting — ensuring your security is both deep and actionable.
+                        At Root Recon, security is not about counting vulnerabilities. It is about finding the ones that truly matter. We focus on real attack paths that bypass controls, abuse business logic, break authorization, and lead to data leaks or fraud.
+
                     </p>
                 </div>
 
