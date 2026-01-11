@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/Button";
-import { Menu, X, ChevronDown, Shield, Target, Smartphone, Globe, Server, Building, Cpu, Heart, DollarSign, FileText, BookOpen, Users, Info, MessageSquare } from "lucide-react";
+import { Menu, X, ChevronDown, Shield, Target, Smartphone, Globe, Server, Building, Heart, DollarSign, FileText, BookOpen, Users, Info, MessageSquare, ShoppingCart, GraduationCap, Award } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 import { Cloud, Code } from "lucide-react";
@@ -15,8 +15,7 @@ const menuData = {
         title: "Services",
         items: [
             { name: "Penetration Testing", href: "/solutions/penetration-testing", icon: Shield, desc: "Comprehensive security assessments" },
-            { name: "PTaaS", href: "/solutions/ptaas", icon: Building, desc: "Continuous testing as a service" },
-            { name: "Red Teaming", href: "/solutions/red-teaming", icon: Target, desc: "Simulate real-world attacks" },
+
             { name: "Web App Security", href: "/solutions/web-security", icon: Globe, desc: "OWASP Top 10 & beyond" },
             { name: "API Security", href: "/solutions/api-security", icon: Server, desc: "REST, GraphQL & gRPC" },
             { name: "Mobile Security", href: "/solutions/mobile-security", icon: Smartphone, desc: "iOS & Android testing" },
@@ -27,10 +26,12 @@ const menuData = {
     solutions: {
         title: "Industries",
         items: [
-            { name: "Fintech Security", href: "/industries/fintech", icon: DollarSign, desc: "Secure financial apps" },
-            { name: "AI/ML Security", href: "/industries/ai-ml", icon: Cpu, desc: "Protect AI systems" },
-            { name: "SaaS Security", href: "/industries/saas", icon: Building, desc: "SOC 2 & compliance" },
-            { name: "Healthcare Security", href: "/industries/healthcare", icon: Heart, desc: "HIPAA compliant testing" },
+            { name: "Fintech", href: "/industries/fintech", icon: DollarSign, desc: "Secure financial applications" },
+            { name: "SaaS", href: "/industries/saas", icon: Cloud, desc: "Cloud software security" },
+            { name: "E-commerce", href: "/industries/ecommerce", icon: ShoppingCart, desc: "Online retail protection" },
+            { name: "Healthcare", href: "/industries/healthcare", icon: Heart, desc: "HIPAA compliant testing" },
+            { name: "Education", href: "/industries/education", icon: GraduationCap, desc: "EdTech & institution security" },
+            { name: "Enterprise", href: "/industries/enterprise", icon: Building, desc: "Large-scale system security" },
         ],
     },
     resources: {
@@ -46,6 +47,7 @@ const menuData = {
         items: [
             { name: "About Us", href: "/about", icon: Info, desc: "Our story & mission" },
             { name: "Customers", href: "/customers", icon: Users, desc: "Who trusts us" },
+            { name: "Contributions", href: "/contribution", icon: Award, desc: "Our security work" },
             { name: "Contact", href: "/contact", icon: MessageSquare, desc: "Get in touch" },
         ],
     },
