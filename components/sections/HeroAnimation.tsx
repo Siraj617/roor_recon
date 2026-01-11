@@ -10,9 +10,8 @@ const services = [
     { icon: Cloud, label: "Cloud Sec", x: 220, y: 100 },
     { icon: Lock, label: "Network", x: 0, y: -180 },
     { icon: FileSearch, label: "Code Review", x: -120, y: 180 },
-    { icon: Target, label: "VAPT", x: 120, y: 180 },
     { icon: Layers, label: "PTaaS", x: -300, y: 0 },
-    { icon: Crosshair, label: "Red Team", x: 300, y: 0 },
+
 ];
 
 export interface HeroAnimationProps {
