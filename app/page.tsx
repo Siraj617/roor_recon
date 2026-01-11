@@ -2,11 +2,13 @@ import { Header } from "@/components/layout/Header";
 import { Hero } from "@/components/sections/Hero";
 import { Research } from "@/components/sections/Research";
 import { Features } from "@/components/sections/Features";
+import { WhoWeHelp } from "@/components/sections/WhoWeHelp";
 import { Services } from "@/components/sections/Services";
 import { Methodology } from "@/components/sections/Methodology";
 import { CaseStudies } from "@/components/sections/CaseStudies";
 import { About } from "@/components/sections/About";
 import { FAQ } from "@/components/sections/FAQ";
+import { Contributions } from "@/components/sections/Contributions";
 import { Contact } from "@/components/sections/Contact";
 
 export default function Home() {
@@ -16,11 +18,13 @@ export default function Home() {
       <Hero />
       <Research />
       <Features />
+      <WhoWeHelp />
       <Services />
       <Methodology />
       <CaseStudies />
       <About />
       <FAQ />
+      <Contributions />
       <Contact />
     </main>
   );
