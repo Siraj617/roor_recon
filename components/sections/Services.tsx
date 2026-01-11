@@ -15,11 +15,11 @@ const services = [
         image: "https://certera.com/blog/wp-content/uploads/2023/04/web-application-penetration-testing-jpg.webp",
     },
     {
-        title: "Red Teaming",
+        title: "Cloud & infrastructure security",
         icon: Crosshair,
-        href: "/solutions/red-teaming",
-        desc: "Evaluate your security team's readiness with simulated real-world attacks.",
-        features: ["Internal Testing", "External Testing", "Adversary Emulation", "Defense Evasion"],
+        href: "/solutions/cloud-security",
+        desc: "Cloud security issues grow fast when left unseen. We identify IAM risks, exposed services, and lateral movement paths to reduce blast radius and prevent serious breaches.",
+        features: ["IAM Risks", "Exposed Services", "Lateral Movement", "Defense Evasion"],
         image: "https://artificesecurity.com/wp-content/uploads/2023/03/RED-TEAM-main-SM.jpg",
     },
     {
