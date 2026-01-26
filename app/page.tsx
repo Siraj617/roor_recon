@@ -24,7 +24,7 @@ export default function Home() {
       <CaseStudies />
       <About />
       <FAQ />
-      <Contributions />
+
       <Contact />
     </main>
   );
