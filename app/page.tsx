@@ -18,7 +18,7 @@ export default function Home() {
       <Hero />
       <Research />
       <Features />
-      <WhoWeHelp />
+     
       <Services />
       <Methodology />
       <CaseStudies />
