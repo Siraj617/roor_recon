@@ -39,7 +39,7 @@ const menuData = {
         items: [
             { name: "Blog", href: "/blog", icon: FileText, desc: "Security insights" },
             { name: "Case Studies", href: "/customers", icon: BookOpen, desc: "Success stories" },
-            { name: "Buyer's Guide", href: "/blog", icon: FileText, desc: "Choose the right partner" },
+
         ],
     },
     company: {
