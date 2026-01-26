@@ -36,9 +36,9 @@ export function Hero() {
                             transition={{ duration: 0.5, delay: 0.1 }}
                             className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-900 leading-[1.1]"
                         >
-                            Offensive Security for <br />
+                            Deep Insights <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-                                Modern Attack Surfaces
+                                Zero Blind Spots
                             </span>
                         </motion.h1>
 
