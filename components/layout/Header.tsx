@@ -149,7 +149,7 @@ export function Header() {
 
                     <Link href="/get-started">
                         <Button className="bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-600/20 px-6">
-                            Get Started
+                            Get Quote
                         </Button>
                     </Link>
                 </div>
@@ -185,7 +185,7 @@ export function Header() {
                             ))}
                             <div className="pt-4 border-t border-slate-100 flex flex-col gap-3">
                                 <Link href="/get-started">
-                                    <Button className="w-full bg-blue-600 text-white">Get Started</Button>
+                                    <Button className="w-full bg-blue-600 text-white">Get Quote</Button>
                                 </Link>
 
                             </div>
