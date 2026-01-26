@@ -206,19 +206,7 @@ export default function AboutPage() {
             </section>
 
             {/* Trusted By */}
-            <section className="py-16 bg-slate-50">
-                <div className="container px-4 mx-auto text-center">
-                    <p className="text-slate-500 font-medium mb-8">Trusted by security-conscious organizations worldwide</p>
-                    <div className="flex flex-wrap justify-center items-center gap-12 opacity-60">
-                        <Globe size={40} className="text-slate-400" />
-                        <Shield size={40} className="text-slate-400" />
-                        <Lock size={40} className="text-slate-400" />
-                        <Code size={40} className="text-slate-400" />
-                        <Target size={40} className="text-slate-400" />
-                        <Eye size={40} className="text-slate-400" />
-                    </div>
-                </div>
-            </section>
+
 
             {/* CTA */}
             <section className="py-24 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
