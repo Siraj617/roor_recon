@@ -146,9 +146,7 @@ export function Header() {
 
                 {/* CTAs */}
                 <div className="hidden lg:flex items-center gap-3">
-                    <Link href="/get-started" className="text-sm font-medium text-slate-600 hover:text-blue-600 px-4 py-2">
-                        Sign In
-                    </Link>
+
                     <Link href="/get-started">
                         <Button className="bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-600/20 px-6">
                             Get Started
@@ -189,7 +187,7 @@ export function Header() {
                                 <Link href="/get-started">
                                     <Button className="w-full bg-blue-600 text-white">Get Started</Button>
                                 </Link>
-                                <Link href="/get-started" className="text-center text-sm text-slate-600">Sign In</Link>
+
                             </div>
                         </div>
                     </motion.div>
