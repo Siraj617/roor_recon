@@ -47,7 +47,7 @@ const menuData = {
         items: [
             { name: "About Us", href: "/about", icon: Info, desc: "Our story & mission" },
             { name: "Customers", href: "/customers", icon: Users, desc: "Who trusts us" },
-            { name: "Contributions", href: "/contribution", icon: Award, desc: "Our security work" },
+            
             { name: "Contact", href: "/contact", icon: MessageSquare, desc: "Get in touch" },
         ],
     },
