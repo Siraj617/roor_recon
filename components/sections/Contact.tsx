@@ -91,26 +91,7 @@ export function Contact() {
                 </div>
 
                 {/* Newsletter + CTA */}
-                <div className="bg-slate-800 rounded-2xl p-8 md:p-12 mb-16">
-                    <div className="grid md:grid-cols-2 gap-8 items-center">
-                        <div>
-                            <h3 className="text-2xl font-bold text-white mb-2">Ready to Secure Your Business?</h3>
-                            <p className="text-slate-400">Get a free consultation with our security experts.</p>
-                        </div>
-                        <div className="flex flex-col sm:flex-row gap-4">
-                            <Link href="/get-started" className="flex-1">
-                                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white h-12">
-                                    Get Started <ArrowRight size={16} className="ml-2" />
-                                </Button>
-                            </Link>
-                            <Link href="/contact" className="flex-1">
-                                <Button variant="outline" className="w-full border-slate-600 text-white hover:bg-slate-700 h-12">
-                                    Contact Us
-                                </Button>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
+
 
                 {/* Bottom Bar */}
                 <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
