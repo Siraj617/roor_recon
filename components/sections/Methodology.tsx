@@ -59,7 +59,7 @@ export function Methodology() {
                     <div className="absolute top-16 left-[8%] right-[8%] h-1 z-0">
                         <div className="absolute inset-0 bg-slate-200 rounded-full" />
                         <motion.div
-                            className="absolute inset-y-0 left-0 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full"
+                            className="absolute inset-y-0 left-0 bg-gradient-to-r from-black to-black rounded-full"
                             initial={{ width: "0%" }}
                             whileInView={{ width: "100%" }}
                             viewport={{ once: true }}
@@ -82,10 +82,10 @@ export function Methodology() {
                                         delay: index * 0.2
                                     }}
                                 >
-                                    <div className="w-14 h-14 rounded-full bg-white border-4 border-blue-500 flex items-center justify-center shadow-lg">
-                                        <step.icon className="w-6 h-6 text-blue-600" />
+                                    <div className="w-14 h-14 rounded-full bg-white border-4 border-black flex items-center justify-center shadow-lg">
+                                        <step.icon className="w-6 h-6 text-primary" />
                                     </div>
-                                    <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-blue-600 text-white text-[10px] font-bold flex items-center justify-center shadow-md">
+                                    <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center shadow-md">
                                         {index + 1}
                                     </div>
                                 </motion.div>
@@ -131,7 +131,7 @@ export function Methodology() {
                                 {/* Circle with Icon */}
                                 <div className="absolute left-0 w-12 h-12 rounded-full bg-white border-4 border-blue-500 flex items-center justify-center shadow-lg">
                                     <step.icon className="w-5 h-5 text-blue-600" />
-                                    <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-blue-600 text-white text-[10px] font-bold flex items-center justify-center shadow-md">
+                                    <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-black text-white text-[10px] font-bold flex items-center justify-center shadow-md">
                                         {index + 1}
                                     </div>
                                 </div>

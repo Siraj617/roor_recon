@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @theme {
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
@@ -36,7 +40,7 @@
   --popover: #ffffff;
   --popover-foreground: #0f172a;
 
-  --primary: #2563eb;
+  --primary: #FF5C5C;
   /* Royal Blue */
   --primary-foreground: #ffffff;
 
@@ -57,7 +61,7 @@
 
   --border: #e2e8f0;
   --input: #e2e8f0;
-  --ring: #2563eb;
+  --ring: #FF5C5C;
 
   --radius: 0.5rem;
 }
